@@ -42,3 +42,40 @@ where BalDue = 0 and State = 'Karnataka'
 
 select * from Client_Master
 where BalDue between 0 and 5000
+
+
+
+-------------------------------------31/01/2022----------------------------------------------------
+
+--1]- List the name of all client having 'a' as the second letter in their names.
+
+-- select * from Client_Master
+-- where ClientName like '_a%'
+
+
+--2]- List the client who stay in a city whose First letter is 'M'.
+
+-- select * from Client_Master
+-- where City like 'M%'
+
+--3]- List all client who stay in 'Banglore' or 'mangalore'.
+
+-- select * from Client_Master
+-- where City = 'Banglore' or City = 'Manglore'
+
+--4]- List all client whose BalDue is greatern than  value 10000
+
+
+-- select * from Client_Master
+-- where BalDue > 10000
+
+
+--5]- List the oder infomation for ClirntNo 'C00001' and 'C00002'.
+
+-- select * from Client_Master
+-- where ClientNo =  'C00001' or ClientNo  = 'C00002'
+
+--6]- List the name , city and state of client who are not state of 'Maharastra'.
+
+-- select ClientName,City,state from Client_Master
+-- where state != 'Maharastra'
