@@ -19,3 +19,10 @@ insert into Product_Master values('P07975','Lycra Tops',5,'Piece',70,30,300,175)
 insert into Product_Master values('P08865','Skirts',5,'Piece',75,30,450,300)
 
 select * from Product_Master;
+
+------------------------------------------31/01/2022--------------------------------------------------
+
+--1]- List product whose seling price is more than 500 and less than or equl to 750.
+
+select * from Product_Master
+where SellPrice > 500 and SellPrice <= 750
